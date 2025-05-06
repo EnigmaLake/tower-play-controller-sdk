@@ -1,0 +1,67 @@
+@use "../../common.scss" as *;
+
+.base {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.switcher {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 21px;
+  border-radius: 23px;
+  background-color: #0e2749;
+  transition: background-color 0.3s ease;
+
+  cursor: pointer;
+}
+
+.gold {
+  background-color: #d4af26;
+}
+
+.sweeps {
+  background-color: #10be68;
+}
+
+.unchecked {
+  background-color: #0e2749b8;
+}
+
+.disabled {
+  opacity: 0.1;
+}
+
+.base .thumb {
+  cursor: pointer;
+  position: absolute;
+  left: 3px;
+  width: 17px;
+  height: 17px;
+  background-color: #5c74b1;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.base .thumb.move-right {
+  background-color: #fff;
+
+  transform: translateX(21px);
+}
+
+.base .label {
+  color: #fff;
+  cursor: pointer;
+
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+}

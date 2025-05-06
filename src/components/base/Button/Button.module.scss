@@ -1,0 +1,76 @@
+@use "../../common.scss" as *;
+
+.base {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  font-weight: 700;
+
+  &__theme {
+    &-ghost {
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      color: rgba(var(--text-color-hex), 1);
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: rgba(var(--bg-color-rgb), 0.05);
+      }
+    }
+
+    &-primary {
+      color: rgba(var(--text-color-hex), 1);
+      line-height: 125%;
+      letter-spacing: 0.75px;
+      border-radius: 10px;
+      height: 39px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 10px;
+      margin-top: 7px;
+    }
+  }
+
+  &__state {
+    &-disabled {
+      color: rgba(var(--text-color-hex), 0.5) !important;
+      pointer-events: none;
+    }
+  }
+}
+
+.buttonCashout {
+  background: linear-gradient(357deg, #7f44c3 22.01%, #9f5eeb 97.97%);
+  &:active,
+  &__active {
+    background: rgba(89, 47, 157, 1);
+  }
+}
+
+.buttonSweeps {
+  background: linear-gradient(357deg, #10be68 23.9%, #29cf7d 97.97%);
+  &:active,
+  &__active {
+    background: rgba(0, 140, 71, 1);
+  }
+}
+
+.buttonGold {
+  background: linear-gradient(357deg, #bf9e21 22.01%, #f0c72c 97.97%);
+  &:active,
+  &__active {
+    background: rgba(154, 124, 4, 1);
+  }
+}

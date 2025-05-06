@@ -1,0 +1,48 @@
+@use "../../common.scss" as *;
+
+.base {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  z-index: 1;
+  color: rgba(var(--text-color-hex), 1);
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  width: 100%;
+  height: 35px;
+  position: relative;
+  gap: 7px;
+}
+
+.icon {
+  display: block;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.input,
+.label {
+  color: rgba(var(--text-color-hex), 1);
+  max-width: 90px;
+  padding: 0;
+  background: transparent;
+  text-align: center;
+}
+
+.label {
+  position: absolute;
+  font-size: 10px;
+  top: 2px;
+}
+
+.gold {
+  color: #d4af26;
+}
+
+.sweeps {
+  color: #10be68;
+}

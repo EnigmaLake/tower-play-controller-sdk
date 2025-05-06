@@ -1,0 +1,17 @@
+@use "../../common.scss" as *;
+
+.base {
+  padding: 10px 12px;
+  color: rgba(var(--text-color-hex), 1);
+
+  border: none;
+  outline: none;
+  width: 100%;
+  user-select: none !important;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: pointer;
+  color: rgba(var(--text-color-hex), 0.1) !important;
+}

@@ -1,0 +1,66 @@
+@use "../../common.scss" as *;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3px;
+  width: 35px;
+  height: 35px;
+  transition: all 0.7s;
+}
+
+.menu {
+  width: auto;
+  cursor: pointer;
+}
+
+.menuItems {
+  width: 100%;
+  width: 110px;
+  overflow-y: auto;
+  background-color: rgba(var(--play-dropdown-bg), 1);
+  padding: 4px 0px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.menuItem {
+  padding: 2px 12px;
+  color: rgba(var(--text-color-hex), 1);
+  background-color: rgba(var(--play-dropdown-bg), 1);
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+
+  &:hover {
+    color: rgba(var(--text-color-hex), 1);
+    background: rgba(var(--bg-color-rgb), 0.16);
+  }
+}
+
+.selected {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" d="M20.53 6.47a.75.75 0 0 1 0 1.06l-10 10a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 1 1 1.06-1.06L10 15.94l9.47-9.47a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" fill="%23FFFFFF"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.disabled {
+  svg {
+    opacity: 0.1;
+  }
+  cursor: not-allowed;
+}

@@ -1,0 +1,20 @@
+*,
+html {
+  --bet-bottom: 15px;
+  --bet-panel-bg: 8, 30, 100;
+  --play-dropdown-bg: 16, 36, 63;
+
+  --bg-color-rgb: 255, 255, 255;
+  --text-color-hex: 255, 255, 255;
+
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  cursor: default;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

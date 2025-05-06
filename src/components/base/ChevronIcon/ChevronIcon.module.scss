@@ -1,0 +1,15 @@
+.chevron {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  stroke: rgba(var(--text-color-hex), 1);
+}
+
+.open {
+  transform: rotate(-180deg);
+}
+
+.disable {
+  stroke: rgba(var(--text-color-hex), 0.1);
+}
