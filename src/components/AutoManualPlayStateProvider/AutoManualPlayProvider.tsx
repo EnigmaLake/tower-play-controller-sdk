@@ -154,7 +154,7 @@ const AutoManualPlayProvider: React.FC<AutoManualPlayStateProviderProps> = ({
                 ...config.playOptions,
                 disabledMenu:
                   config.playOptions.disabledController ||
-                  autoplayState === AUTO_PLAY_STATE.PLAYING,
+                  config.playOptions.disabledMenu,
               }}
               dropdownConfig={config.dropdown}
             />
