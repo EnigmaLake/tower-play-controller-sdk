@@ -7,6 +7,9 @@
   "typings": "dist/index.d.ts",
   "type": "module",
   "style": "dist/style.css",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc && rollup -c --bundleConfigAsCjs",
     "start": "webpack serve --mode development --open",
